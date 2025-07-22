@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do App</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="todo-app">
-            <h2>To Do List <img src="img/to-do.png" alt="To Do Icon"></h2>
-            <div class="row">
-                <input type="text" id="input-box" placeholder="Add your text">
-                <button onclick="addTask()">Add</button>
-            </div>
-            <ul id="list-container">
-                <!-- <li class="checked">Task 1</li>
-                <li>Task 2</li>
-                <li>Task 3</li> -->
-            </ul>
+      <div class="todo-app">
+        <h2>📝 To-Do List</h2>
+        <input type="text" id="input-box" placeholder="Add your task" />
+        <input type="date" id="date-input" />
+        <button id="add-btn" onclick="addTask()">Add</button>
+
+        <ul id="list-container"></ul>
+
+        <div class="filters">
+          <button class="filter-btn active" id="all">All</button>
+          <button class="filter-btn" id="active">Active</button>
+          <button class="filter-btn" id="completed">Completed</button>
         </div>
+
+        <button id="toggle-dark">🌙 Toggle Dark Mode</button>
+      </div>
     </div>
-    <script src="/javascript/script.js"></script>
-</body>
+
+    <script src="javascript/script.js"></script>
+  </body>
 </html>
