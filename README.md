@@ -64,14 +64,6 @@ Click the **"Toggle Dark Mode"** button to switch between light and dark themes 
 
 ---
 
-## 📌 Future Improvements
-
-- [ ] Add task categories or labels
-- [ ] Drag-and-drop reordering
-- [ ] Sync across devices (using backend or cloud storage)
-
----
-
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
